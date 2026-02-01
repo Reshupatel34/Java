@@ -1,5 +1,6 @@
 import java.util.HashSet;
 public class SetMatrixZeroes {
+
     public static void main(String[] args) {
         int[][] matrix={{0,1,2,0},{3,4,5,2},{1,3,1,5}};
         HashSet<Integer> rowsetbit=new HashSet<>();
@@ -32,5 +33,7 @@ public class SetMatrixZeroes {
                System.out.print(matrix[i][j]+" ");
            }
         }
+
     }
+
 }
