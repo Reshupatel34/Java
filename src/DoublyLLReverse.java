@@ -7,7 +7,8 @@ public class DoublyLLReverse {
             this.data=data;
             this.next=null;
             this.prev=null;
-        }}
+        }
+    }
 
         public static Node head;
         public static Node tail;
