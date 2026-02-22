@@ -82,6 +82,14 @@ public class BinaryTree {
                 }
             }
         }
+        public static int height(Node root){
+                  if(root==null)return 0;
+
+                  int lh=height(root.left);
+                  int rh=height(root.right);
+                  int max=Math.max(rh,lh)+1;
+                  return max;
+        }
 
     }
     public static void main(String[] args) {
@@ -94,5 +102,6 @@ public class BinaryTree {
 //        tree.postorder(root);
      // tree.inorder(root);
         tree.levelorder(root);
+        System.out.println(tree.height(root));
     }
 }
