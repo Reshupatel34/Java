@@ -7,11 +7,11 @@ public class POD868BinaryGap {
 
         int left = 0;
         int right = 1;
-        int dist = 0;
+        int distt = 0;
         while (left < bits.length() && right < bits.length()) {
             if (bits.charAt(left) == '1' &&
                     bits.charAt(right) == '1') {
-                dist = Math.max(dist, right - left);
+                distt = Math.max(distt, right - left);
                 left=right;
 
             }
@@ -21,6 +21,6 @@ public class POD868BinaryGap {
 
 
         }
-        System.out.println(dist);
+        System.out.println(distt);
     }
 }
