@@ -173,7 +173,7 @@ public class LinkedList {
         Node next;
         while(curr!=null){
              next=curr.next;
-            cuurr.next=prev;
+            curr.next=prev;
             prev=curr;
             curr=next;
         }
