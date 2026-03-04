@@ -12,9 +12,7 @@ public class POD1582SpecialPositionsInABinaryMatrix {
                     int k=i;
                     int l=j;
                     boolean flag1=true;
-                    boolean flag2=true;
-                    boolean flag3=true;
-                    boolean flag4=true;
+
                     while (k > 0) {
                         k--;
                         if (mat[k][l] != 0)  {
@@ -30,7 +28,7 @@ public class POD1582SpecialPositionsInABinaryMatrix {
                         k++;
                         if (mat[k][l] != 0) {
 
-                            flag2 = false;
+                            flag1 = false;
                             break;
                         }
 
@@ -41,7 +39,7 @@ public class POD1582SpecialPositionsInABinaryMatrix {
                         l--;
                         if (mat[k][l] != 0) {
 
-                            flag3 = false;
+                            flag1 = false;
                             break;
                         }
 
@@ -53,12 +51,12 @@ public class POD1582SpecialPositionsInABinaryMatrix {
                         l++;
                         if (mat[k][l] != 0) {
 
-                            flag4 = false;
+                            flag1 = false;
                             break;
                         }
 
                     }
-                    if(flag1 && flag2 && flag3 && flag4){
+                    if(flag1){
                         count++;
                     }
                 }
