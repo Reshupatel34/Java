@@ -10,10 +10,10 @@ public class BiweeklyContest177SmallestPairWithDifferentFrequencies {
         int minofX=nums[0];
         for(int i=1;i<nums.length-1;i++){
             if( map.get(minofX)!=map.get(nums[i+1]) ){
-                return new int[]{minofX,nums[i+1]};
+//                return new int[]{minofX,nums[i+1]};
             }
 
         }
-        return new int[]{-1,-1};
+//        return new int[]{-1,-1};
     }
 }
