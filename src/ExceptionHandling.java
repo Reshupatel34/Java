@@ -5,6 +5,16 @@ public class ExceptionHandling {
         }catch(ArithmeticException e){
             System.out.println(e.getMessage());
         }
-        System.out.println("rest of the code executes...");
+//        System.out.println("rest of the code executes...");
+
+
+//        null pointer error
+        try{
+            String str=null;
+            System.out.println(str.length());
+        }catch(NullPointerException err){
+            System.out.println(err.getMessage());
+        }
+        System.out.println("code....");
     }
 }
