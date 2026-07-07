@@ -57,6 +57,13 @@ public class Functionalinterface {
 
 //       direct list me store ho raha hai
 
-        list.stream().filter(x->x%2==0).map(x->x*4).collect(Collectors.toList());
+      List<Integer> list2=  list.stream().filter(x->x%2==0).map(x->x*4).collect(Collectors.toList());
+        System.out.println(list);
+        System.out.println(list2);
+
+
+//        to reduce the code--> the diff of all the elements of the list
+        int x=list.stream().reduce(0,(i,j)->i-j);
+        System.out.println(x);
     }
 }
